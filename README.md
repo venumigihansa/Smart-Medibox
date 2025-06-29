@@ -42,6 +42,10 @@ Smart Medibox is a device designed to aid in the effective management of medicat
 3. Receive alerts and manage settings directly via the OLED display.
 
 ---
+## 📸 Demo & Media
+
+> ![Device Setup] ![image](https://github.com/user-attachments/assets/665347aa-9352-4441-90d6-ec289cd675a5)
+
 
 ## 🌟 Stage 2: Intelligent Light & Environment Control
 
@@ -115,9 +119,11 @@ Includes 3 sliders to customize control parameters:
 ## 📊 Dashboard Overview
 
 > *(Replace with your own screenshots)*  
-![Stage 2 Dashboard Placeholder](docs/images/dashboard-placeholder.jpg)
 
----
 
-## 📁 Suggested Folder Structure
+## 📸 Demo & Media
+
+> ![Device Setup] ![image](https://github.com/user-attachments/assets/e12bbdf4-674d-4b08-b1b8-d304eecc83c4)
+
+
 
