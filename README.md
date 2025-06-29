@@ -118,7 +118,8 @@ Includes 3 sliders to customize control parameters:
 
 ## 📊 Dashboard Overview
 
-> *(Replace with your own screenshots)*  
+> ![image](https://github.com/user-attachments/assets/cd56535f-d555-4b16-8039-16256b9efac1)
+
 
 
 ## 📸 Demo & Media
