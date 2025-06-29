@@ -60,5 +60,6 @@ Smart Medibox is a device designed to aid in the effective management of medicat
 
 ## 📸 Demo & Media
 
-> *(Add your images and videos here)*  
+> *(Add your images and videos here)*  ![image](https://github.com/user-attachments/assets/0a29f2fc-6792-4fdf-b724-18c9e84ff10b)
+
 > ![Device Setup](docs/images/device-placeholder.jpg)  
