@@ -19,47 +19,105 @@ Smart Medibox is a device designed to aid in the effective management of medicat
 
 ---
 
-## 🔩 Components
+### 🔩 Components
 
-- **ESP32 Devkit V1**  
-  Central processing unit.
-
-- **ADAFRUIT SSD1306 OLED Monochrome Display**  
-  Displays current time, medication reminders, and alerts.
-
-- **DHT11 Temperature and Humidity Sensor**  
-  Measures environmental conditions.
-
-- **Breadboard Setup**  
-  All components are mounted and wired on a breadboard for prototyping.
+- **ESP32 Devkit V1** – Central processing unit.
+- **ADAFRUIT SSD1306 OLED Monochrome Display** – Displays current time, medication reminders, and alerts.
+- **DHT11 Temperature and Humidity Sensor** – Measures environmental conditions.
+- **Breadboard Setup** – All components are prototyped on a breadboard.
 
 ---
 
-## 🛠️ Development Setup
+### 🛠️ Development Setup
 
-- **PlatformIO with Arduino Framework**  
-  Used for programming the ESP32.
-
-- **Wokwi Simulation**  
-  Simulate the functionality before the physical implementation.
+- **PlatformIO with Arduino Framework** – Used for programming the ESP32.
+- **Wokwi Simulation** – Simulate the functionality before the physical implementation.
 
 ---
 
-## 🚀 Usage
+### 🚀 Usage
 
-1. **Connect to Wi-Fi**  
-   Configure the ESP32 with your network to connect to the NTP server.
-
-2. **Set Reminders**  
-   Set up medication reminders and environmental thresholds through the device menu.
-
-3. **Receive Alerts**  
-   Receive alerts and manage settings directly via the OLED display.
+1. Configure the ESP32 with your network to connect to the NTP server.
+2. Set up medication reminders and environmental thresholds through the device menu.
+3. Receive alerts and manage settings directly via the OLED display.
 
 ---
 
-## 📸 Demo & Media
+## 🌟 Stage 2: Intelligent Light & Environment Control
 
-> *(Add your images and videos here)*  ![image](https://github.com/user-attachments/assets/0a29f2fc-6792-4fdf-b724-18c9e84ff10b)
+This stage enhances the Smart Medibox with automated light regulation and advanced environmental control using light sensors and a servo-controlled shaded window.
 
-> ![Device Setup](docs/images/device-placeholder.jpg)  
+---
+
+### 🌞 Light Intensity Monitoring
+
+- Utilizes an **LDR (Light Dependent Resistor)** to measure ambient light.
+- **Sampling Interval (ts)**: Default 5 seconds (user-configurable).
+- **Sending Interval (tu)**: Default 2 minutes (user-configurable).
+- Averages light intensity readings and sends the data to the Node-RED dashboard.
+
+---
+
+### 📊 Node-RED Dashboard – Light Group
+
+- **Numerical Display**: Shows latest average light intensity (range 0–1).
+- **Chart**: Historical light intensity trends.
+- **Two Sliders**:
+  - Sampling interval (`ts`) in seconds
+  - Sending interval (`tu`) in seconds or minutes
+
+---
+
+### 🤖 Shaded Sliding Window – Servo Control
+
+A servo motor adjusts the window angle to regulate light exposure based on environmental conditions.
+
+**Equation for Motor Angle**:
+
+
+Where:
+
+- `θ` = motor angle  
+- `θoffset` = minimum angle (default 30°)  
+- `I` = light intensity (0 to 1)  
+- `γ` = controlling factor (default 0.75)  
+- `ts` = sampling interval (seconds)  
+- `tu` = sending interval (seconds)  
+- `T` = measured temperature (°C)  
+- `Tmed` = ideal medicine temperature (default 30°C)
+
+---
+
+### ⚙️ Node-RED Dashboard – Motor Control Group
+
+Includes 3 sliders to customize control parameters:
+
+- **Minimum Angle (θoffset)**: 0° to 120°
+- **Controlling Factor (γ)**: 0.0 to 1.0
+- **Ideal Storage Temperature (Tmed)**: 10°C to 40°C
+
+---
+
+## 🔩 Full Component List
+
+| Component                     | Description                                      |
+|------------------------------|--------------------------------------------------|
+| ESP32 Devkit V1              | Microcontroller for processing and control       |
+| SSD1306 OLED Display         | User interface for reminders and alerts          |
+| DHT11                        | Measures internal temperature and humidity       |
+| LDR + Resistor               | Reads ambient light intensity                    |
+| Servo Motor                  | Controls shaded window to regulate lighting      |
+| Breadboard + Jumpers         | Prototyping setup                                |
+| Node-RED Dashboard           | Web interface for configuration and visualization|
+
+---
+
+## 📊 Dashboard Overview
+
+> *(Replace with your own screenshots)*  
+![Stage 2 Dashboard Placeholder](docs/images/dashboard-placeholder.jpg)
+
+---
+
+## 📁 Suggested Folder Structure
+
