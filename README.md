@@ -44,7 +44,7 @@ Smart Medibox is a device designed to aid in the effective management of medicat
 ---
 ## 📸 Demo & Media
 
-> ![Device Setup] ![image](https://github.com/user-attachments/assets/665347aa-9352-4441-90d6-ec289cd675a5)
+>![image](https://github.com/user-attachments/assets/665347aa-9352-4441-90d6-ec289cd675a5)
 
 
 ## 🌟 Stage 2: Intelligent Light & Environment Control
@@ -123,7 +123,7 @@ Includes 3 sliders to customize control parameters:
 
 ## 📸 Demo & Media
 
-> ![Device Setup] ![image](https://github.com/user-attachments/assets/e12bbdf4-674d-4b08-b1b8-d304eecc83c4)
+> ![image](https://github.com/user-attachments/assets/e12bbdf4-674d-4b08-b1b8-d304eecc83c4)
 
 
 
